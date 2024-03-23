@@ -1,31 +1,30 @@
 # ProjetRayTracing
-Projet d'IN204 :Object Oriented Ray Tracing 
+## Projet d'IN204 :Object Oriented Ray Tracing 
 
-Auteurs: AZOUZ SALIMA -MARIEM DOGGAZ
+### Auteurs: AZOUZ SALIMA -MARIEM DOGGAZ
 
-Paramètres de la scène:
+## Paramètres de la scène:
 
-Paramètres d'image:
+### Paramètres d'image:
 
-largeur_img
+   largeur_img
 
-hauteur_img
+   hauteur_img
 
-nombre echantillons_par_pixel
+   nombre echantillons_par_pixel
 
-profondeur_max de récursion pour limiter le nombre de rebonds des rayons réfléchies et réfractés et eviter les boucles infinies
+   profondeur_max de récursion pour limiter le nombre de rebonds des rayons réfléchies et réfractés et eviter les boucles infinies
 
-Paramètres de la caméra:
+   Paramètres de la caméra:
 
-viewerPosition
+   viewerPosition
 
-lowerLeft
+   lowerLeft
 
-lensDiameter
+   lensDiameter
 
-startTime, endTime
-
-gazeAt
+   startTime, endTime
+   gazeAt
 
 verticalFieldOfView, aspectRatio, apertureSize, focalDistance
 
