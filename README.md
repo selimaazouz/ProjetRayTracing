@@ -55,9 +55,18 @@ q : Cette option permet de quitter le programme.
 
 ## Instalation dans linux
 Pour installer les dépendances requises par le projet sous Linux, veuillez exécuter les commandes suivantes :
+
 sudo apt-get update
+
 sudo apt-get install make
+
 make install
+## Compilation
+Pour compiler le projet, veuillez exécuter la commande suivante :
+make all
+## Exécution
+Pour exécuter le projet, lancez simplement l'exécutable, ce qui affichera les options disponibles dans le terminal.
+
 
 
 
