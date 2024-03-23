@@ -1,4 +1,3 @@
 # ProjetRayTracing
-Projet d'IN204 - Orienté Objet: 
-Object Oriented Ray Tracing
+Projet d'IN204 :Object Oriented Ray Tracing
 
