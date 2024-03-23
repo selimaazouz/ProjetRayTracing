@@ -8,18 +8,27 @@ Paramètres de la scène:
 Paramètres d'image:
 
 largeur_img
+
 hauteur_img
-nombre echantillons_par_pixel;
+
+nombre echantillons_par_pixel
+
 profondeur_max de récursion pour limiter le nombre de rebonds des rayons réfléchies et réfractés et eviter les boucles infinies
 
 Paramètres de la caméra:
 
 viewerPosition
+
 lowerLeft
+
 lensDiameter
+
 startTime, endTime
+
 gazeAt
+
 verticalFieldOfView, aspectRatio, apertureSize, focalDistance
+
 
 Paramètres des objets de  la scène:
 
