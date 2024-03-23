@@ -15,7 +15,7 @@
 
    profondeur_max de récursion pour limiter le nombre de rebonds des rayons réfléchies et réfractés et eviter les boucles infinies
 
-   Paramètres de la caméra:
+ ### Paramètres de la caméra:
 
    viewerPosition
 
@@ -29,7 +29,7 @@
 verticalFieldOfView, aspectRatio, apertureSize, focalDistance
 
 
-Paramètres des objets de  la scène:
+### Paramètres des objets de  la scène:
 
 Il existe deux catégories d'objets dans notre système : les sphères statiques et les sphères en mouvement. Les deux catégories partagent des caractéristiques communes telles que le rayon et la position. Cependant, les sphères en mouvement possèdent des attributs supplémentaires : deux positions et deux temps, un pour chaque position.
 
