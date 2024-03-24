@@ -88,7 +88,7 @@ public:
     int obtenirLargeurImage() { return largeur_img; }
     int obtenirHauteurImage() { return hauteur_img; }
 
-    // Méthodes utiles pour la barre de progression
+    // MÃ©thodes utiles pour la barre de progression
     bool estEnTravail() { return en_travail; }
     std::chrono::time_point<std::chrono::steady_clock> obtenirTempsDebutTravail() { return temps_debut; }
     int obtenirLignesRestantes() { return lignes_restantes; }
@@ -96,7 +96,7 @@ public:
     void definircamera( point regarde_de,
         point regarde_vers,
         vecteur3   vertical,
-        double champ_de_vision, // angle de champ vertical en degrés
+        double champ_de_vision, // angle de champ vertical en degrÃ©s
         double ouverture_diaphragme,
         double distance_de_focus,double temps0 = 0,
         double temps1 = 0) {
@@ -139,14 +139,14 @@ MoteurRendu::MoteurRendu(unsigned int largeur_image, unsigned int hauteur_image,
 MoteurRendu::MoteurRendu(const char* nom_fichier) {
     tinyxml2::XMLDocument xmlDoc;
 
-    tinyxml2::XMLError eResult = xmlDoc.LoadFile(nom_fichier);
+    //tinyxml2::XMLError eResult = xmlDoc.LoadFile(nom_fichier);
     //XMLCheckResult(eResult);
 
     tinyxml2::XMLNode * pRoot = xmlDoc.FirstChild();
-    if (pRoot == nullptr) throw std::invalid_argument("Le fichier ne contient pas d'élément racine");
+    if (pRoot == nullptr) throw std::invalid_argument("Le fichier ne contient pas d'Ã©lÃ©ment racine");
 
     tinyxml2::XMLElement * pElement = pRoot->FirstChildElement("MoteurRendu");
-    if (pElement == nullptr) throw std::invalid_argument("Le fichier ne contient pas d'élément moteur de rendu");
+    if (pElement == nullptr) throw std::invalid_argument("Le fichier ne contient pas d'Ã©lÃ©ment moteur de rendu");
 
     largeur_img = pElement->IntAttribute("LargeurImg");
     hauteur_img = pElement->IntAttribute("HauteurImg");
@@ -159,12 +159,12 @@ MoteurRendu::MoteurRendu(const char* nom_fichier) {
     texture.create(largeur_img, hauteur_img);
 
     tinyxml2::XMLElement * pElementcamera = pElement->FirstChildElement("camera");
-    if (pElementcamera == nullptr) throw std::invalid_argument("Le fichier ne contient pas d'élément camera");
+    if (pElementcamera == nullptr) throw std::invalid_argument("Le fichier ne contient pas d'Ã©lÃ©ment camera");
 
     cam = camera(pElementcamera);
 
     tinyxml2::XMLElement * pElementListe = pRoot->FirstChildElement("Liste");
-    if (pElementListe == nullptr) throw std::invalid_argument("Le fichier ne contient pas d'élément liste");
+    if (pElementListe == nullptr) throw std::invalid_argument("Le fichier ne contient pas d'Ã©lÃ©ment liste");
 
     monde = ObjectList(pElementListe);
 }
@@ -195,7 +195,7 @@ void MoteurRendu::sauvegarderDocumentXml(const char* nom_fichier) {
 couleur couleur_rayon(const rayon& r,  ObjectList& monde, int profondeur) {
     EnregIntersect rec;
 
-    // Si nous avons dépassé la limite de rebonds du rayon, plus de lumière n'est collectée.
+    // Si nous avons dÃ©passÃ© la limite de rebonds du rayon, plus de lumiÃ¨re n'est collectÃ©e.
     if (profondeur <= 0)
         return couleur(0,0,0);
 
