@@ -12,12 +12,11 @@ private:
     vecteur3 vertical;
     vecteur3 u, v, w;
     double lensDiameter;
-    double startTime, endTime;
-
     // Parameters storage
     point gazeAt;
     vecteur3 verticalUp;
     double verticalFieldOfView, aspectRatio, apertureSize, focalDistance;
+    double startTime, endTime;
 
 public:
     camera() {};
@@ -52,8 +51,7 @@ public:
         lowerLeft = viewerPosition - horizontal / 2 - vertical / 2 - focalDistance * w;
 
         lensDiameter = apertureSize / 2;
-        startTime = _startTime;
-        endTime = _endTime;
+
     }
 
     camera(tinyxml2::XMLElement * pElement) {
